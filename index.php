@@ -76,7 +76,7 @@ function create_data(){
 			if($stmt->execute()){
 				$successMSG = "new record succesfully inserted ...";
 				echo '<img src="loading.gif"><br>';
-				header("refresh:1;index.php");
+				GoToNow('index.php');
 			}else{
 				$errMSG = "error while inserting....";
 			}
@@ -158,10 +158,10 @@ function update_data(){
 			extract($edit_row);
 		}else{
 			$errMSG = "Edit ID not found!";
-			header("Location: index.php");
+			GoToNow('index.php');
 		}
 	}else{
-		header("Location: index.php");
+		GoToNow('index.php');
 	}
 
 
@@ -210,7 +210,7 @@ function update_data(){
 			if($stmt->execute()){
 				$successMSG = "new record succesfully Updated ...";
 				echo '<img src="loading.gif"><br>';
-				header("refresh:1;index.php");
+				GoToNow('index.php');
 			}else{
 				$errMSG = "Sorry Data Could Not Updated !";
 			}
@@ -262,7 +262,7 @@ function delete_data(){
 
 		$successMSG = "Record succesfully deleted ...";
 		echo '<img src="loading.gif"><br>';
-		header("refresh:1;index.php");
+		GoToNow('index.php');
 	}
 }
 ?>
