@@ -7,9 +7,9 @@ SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
 SET NAMES utf8mb4;
 
-DROP DATABASE IF EXISTS `codingcage.com`;
-CREATE DATABASE `codingcage.com` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `codingcage.com`;
+DROP DATABASE IF EXISTS `userDb`;
+CREATE DATABASE `userDb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `userDb`;
 
 DROP TABLE IF EXISTS `tbl_users`;
 CREATE TABLE `tbl_users` (
